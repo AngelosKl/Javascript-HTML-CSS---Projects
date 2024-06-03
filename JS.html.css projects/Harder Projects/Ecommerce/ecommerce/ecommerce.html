@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/92d70a2fd8.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
+    <title>Eshop</title>
+</head>
+<body>
+    <nav>
+        <div class="navTop">
+            <div class="navItem">
+                <img src="./img/png2.png" width="320" height="150" alt="">
+            </div>
+            <div class="navItem">
+                <span class="limitedOffer">Limited Offer!</span>
+            </div>
+        </div>
+        <div class="navBottom">
+            <h3 class="menuItem">Apple</h3>
+            <h3 class="menuItem">Xiaomi</h3>
+            <h3 class="menuItem">Samsung</h3>
+        </div>
+    </nav>
+    <div class="container">
+
+        <div id="root"></div>
+        <div class="sidebar">
+            <div class="head"><p>My Cart</p><p></p>
+            <div class="cart"><i class="fa-solid fa-cart-shopping"></i><p id="count">0</p></div></div>
+            <div id="cartItem">Your cart is empty</div>
+            <div class="foot">
+                <h3>Total</h3>
+                <h2 id="total">$ 0.00</h2>
+                <button class="checkoutButton">Check out!</button>
+            </div>
+        </div>
+    </div>
+    <div class="slider">
+        <div class="sliderWrapper">
+            <div class="sliderItem" id="appleSlider">
+                <img src="./img/i15pmb.PNG"  alt="" class="sliderImg">
+                <div class="slideBg"></div>
+                <h1 class="sliderTitle">Iphone </br>15 PRO MAX</h1>
+                <h2 class="sliderPrice">$1500</h2>
+                <p class="sliderDescription">The new Iphone 15 pro max is available!</p>
+                <a href="#product">
+                    <button class="buyButton">Buy Now</button>
+                </a>
+            </div>
+            <div class="sliderItem" id="xiaomiSlider">
+                <img src="./img/x13b.PNG"  alt="" class="sliderImg">
+                <div class="sliderBg"></div>
+                <h1 class="sliderTitle">Xiaomi</br>13</br></h1>
+                <h2 class="sliderPrice">$900</h2>
+                <p class="sliderDescription">The new Xiaomi 13 is available!</p>
+                <a href="#product">
+                    <button class="buyButton">Buy Now</button>
+                </a>
+            </div>
+            <div class="sliderItem" id="samsungSlider">
+                <img src="./img/s24uv.PNG"  alt="" class="sliderImg">
+                <div class="sliderBg"></div>
+                <h1 class="sliderTitle">Samsung</br>S24 ULTRA</h1>
+                <h2 class="sliderPrice">$1500</h2>
+                <p class="sliderDescription">The newest model of your favorite brand</p>
+                <a href="#product">
+                    <button class="buyButton">Buy Now</button>
+                </a>
+            </div>
+        </div>
+    </div>
+    <div class="features">
+        <div class="feature">
+            <img src="./img/shipping.PNG" alt="" class="featureIcon">
+            <span class="featuringTitle">FREE SHIPPING!<br></span>
+            <span class="featureDesc">Free worldwide shipping!</span>
+        </div>
+        <div class="feature">
+            <img src="./img/return.PNG" alt="" class="featureIcon">
+            <span class="featuringTitle">30 DAYS RETURN!<br></span>
+            <span class="featureDesc">Return the product and get a refund in just 10 business days!</span>
+        </div>
+        <div class="feature">
+            <img src="./img/gift.PNG" alt="" class="featureIcon">
+            <span class="featuringTitle">MAKE A GIFT!<br></span>
+            <span class="featureDesc">Buy gift cards and use coupons easily!!</span>
+        </div>
+        <div class="feature">
+            <img src="./img/contact.PNG" alt="" class="featureIcon">
+            <span class="featuringTitle">CONTACT US!<br></span>
+            <span class="featureDesc">Contact us via email or make a call to 2100021000!</span>
+        </div>
+    </div>
+    <div class="product" id="product">
+        <img src="./img/i15pmb.PNG" alt="" class="productImg">
+        <div class="productDetails">
+            <h1 class="productTitle">Buy your smartphone here!!</h1>
+            <h2 class="productPrice"></h2>
+            <p class="productDesc">The newest model of your favorite brand</p>
+            <div class="colors">
+                <div class="color"></div>
+                <div class="color"></div>
+            </div>
+            <div class="sizes">
+                <div class="size">128GB</div>
+                <div class="size">256GB</div>
+            </div>
+            <button class="ProductButton">Add to cart!</button>
+        </div>
+        
+  <form action="entry_details_ecommerce.php" method="post">
+        
+        <div class="payment">
+            <h1 class="payTitle">Personal Information</h1>
+            <label>Name and Surname</label>
+            <input type="text" placeholder="John Doe" class="payInput" name="name_surname">
+            <label>Phone Number</label>
+            <input type="text" placeholder="+30 6912345678" class="payInput" name="phone_number">
+            <label>Address 1</label>
+            <input type="text" placeholder="Athinas 35" class="payInput" name="address_1">
+            <label>Postal Code</label>
+            <input type="text" placeholder="15031" class="payInput" name="postal_code">
+            <label>Email</label>
+            <input type="text" placeholder="customerexample1@gmail.com" class="payInput" name="email">
+        </form>
+            <h1 class="payTitle">Card Information</h1>
+            <div class="cardIcons">
+                <img src="./img/cardicons.PNG" alt="" width="60" class="cardIcon">
+            </div>
+            <input type="password" class="payInput" placeholder="Card Number">
+            <div class="cardInfo">
+                <input type="text" placeholder="mm" class="payInput sm">
+                <input type="text" placeholder="yy" class="payInput sm">
+                <input type="text" placeholder="cvv" class="payInput sm">
+            </div>
+            <button class="payButton" name="payButton">Confirm!</button>
+
+
+
+            <span class="close">X</span>
+            
+  
+            </div>
+            
+        </div>
+        
+    </div>
+    <script src="./app.js"></script>
+</body>
+</html>

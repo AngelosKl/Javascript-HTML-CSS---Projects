@@ -1,0 +1,13 @@
+Requirements:
+
+1)Needs XAMPP to work with apache and MySQL(phpadmin).(To make your PC a server to host the website.)
+2)Put all the files in C:\xampp\htdocs folder.
+3)Run Apache and MySQL in XAMPP.
+4)Use VSCode to open the folder htdocs and open with liveserver (VSCode extension).(To run the project with an IDE.)
+
+RUN:
+
+The project is incomplete and buggy. It runs properly if you dont try find errors.
+
+Its my first project.
+:)
